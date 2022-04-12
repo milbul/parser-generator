@@ -1,0 +1,32 @@
+grammar Python;
+
+!i "import java.util.*;";
+
+!t LEFT_BRACKET = "\\(";
+!t RIGHT_BRACKET = "\\)";
+!t AND = "and";
+!t OR = "or";
+!t XOR = "xor";
+!t NOT = "not";
+!t VAR = "[a-z]";
+!t WS = "[ \n\r]+" -> skip;
+
+!s S;
+
+!nt S : K SP;
+
+!nt SP
+    : OR K SP
+    | XOR K SP
+    | EPS;
+
+!nt K : E KP;
+
+!nt KP
+    : AND E KP
+    | EPS;
+
+!nt E
+    : NOT E
+    | LEFT_BRACKET S RIGHT_BRACKET
+    | VAR;

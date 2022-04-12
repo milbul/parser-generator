@@ -1,0 +1,85 @@
+digraph {
+	0 [label = "E"]
+	0 -> 1
+	1 [label = "T"]
+	1 -> 2
+	2 [label = "P"]
+	2 -> 3
+	3 [label = "F"]
+	3 -> 4
+	4 [label = "MINUS"]
+	[color = "violetred4"]
+	3 -> 5
+	5 [label = "F"]
+	5 -> 6
+	6 [label = "NUM"]
+	[color = "violetred4"]
+	2 -> 7
+	7 [label = "PS"]
+	[color = "violetred4"]
+	1 -> 8
+	8 [label = "TS"]
+	[color = "violetred4"]
+	0 -> 9
+	9 [label = "ES"]
+	9 -> 10
+	10 [label = "PLUS"]
+	[color = "violetred4"]
+	9 -> 11
+	11 [label = "T"]
+	11 -> 12
+	12 [label = "P"]
+	12 -> 13
+	13 [label = "F"]
+	13 -> 14
+	14 [label = "NUM"]
+	[color = "violetred4"]
+	12 -> 15
+	15 [label = "PS"]
+	15 -> 16
+	16 [label = "POW"]
+	[color = "violetred4"]
+	15 -> 17
+	17 [label = "P"]
+	17 -> 18
+	18 [label = "F"]
+	18 -> 19
+	19 [label = "NUM"]
+	[color = "violetred4"]
+	17 -> 20
+	20 [label = "PS"]
+	20 -> 21
+	21 [label = "POW"]
+	[color = "violetred4"]
+	20 -> 22
+	22 [label = "P"]
+	22 -> 23
+	23 [label = "F"]
+	23 -> 24
+	24 [label = "NUM"]
+	[color = "violetred4"]
+	22 -> 25
+	25 [label = "PS"]
+	[color = "violetred4"]
+	11 -> 26
+	26 [label = "TS"]
+	26 -> 27
+	27 [label = "MUL"]
+	[color = "violetred4"]
+	26 -> 28
+	28 [label = "P"]
+	28 -> 29
+	29 [label = "F"]
+	29 -> 30
+	30 [label = "NUM"]
+	[color = "violetred4"]
+	28 -> 31
+	31 [label = "PS"]
+	[color = "violetred4"]
+	26 -> 32
+	32 [label = "TS"]
+	[color = "violetred4"]
+	9 -> 33
+	33 [label = "ES"]
+	[color = "violetred4"]
+}

@@ -1,0 +1,23 @@
+grammar notLL1;
+
+!t LEFT_BRACKET = "\\(";
+!t RIGHT_BRACKET = "\\)";
+!t PLUS = "\\+";
+!t MUL = "\\*";
+!t NUM = "[0-9]+";
+!t WS = "[ \n\r]+" -> skip;
+
+!s E;
+
+!nt E
+    : E PLUS T
+    | T;
+
+
+!nt T
+    : T MUL F
+    | F;
+
+!nt F
+    : LEFT_BRACKET E RIGHT_BRACKET
+    | NUM;
